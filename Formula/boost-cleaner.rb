@@ -1,8 +1,8 @@
 class BoostCleaner < Formula
   desc "macOS RAM, process, and developer-cache tune-up CLI"
   homepage "https://github.com/Alierkn/boost"
-  url "https://github.com/Alierkn/boost/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "0e958ac7fc5b9568b9ffa719adcca5d42042734527b322e74fcce57e9e0e3373"
+  url "https://github.com/Alierkn/boost/archive/refs/tags/v1.1.2.tar.gz"
+  sha256 "294063e8e801e791f718a44d8197bd267f8b4081780efde2fb533fa986c2d6b5"
   license "MIT"
   head "https://github.com/Alierkn/boost.git", branch: "main"
 
@@ -30,7 +30,7 @@ class BoostCleaner < Formula
   end
 
   test do
-    assert_match "boost v1.1.1", shell_output("#{bin}/boost --version")
+    assert_match "boost v1.1.2", shell_output("#{bin}/boost --version")
     assert_match "boost doctor", shell_output("#{bin}/boost doctor")
   end
 end
